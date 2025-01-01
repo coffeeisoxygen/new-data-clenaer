@@ -29,9 +29,10 @@
     <!-- https://mvnrepository.com/artifact/org.apache.poi/poi -->
     <dependency>
       <groupId>org.apache.poi</groupId>
-      <artifactId>poi</artifactId>
+      <artifactId>poi-ooxml</artifactId>
       <version>5.3.0</version>
     </dependency>
+
 
     <!-- Async -->
     <dependency>
@@ -58,19 +59,24 @@
 
   <dependencyManagement>
     <dependencies>
-
+      <!-- logging -->
       <dependency>
         <groupId>org.apache.logging.log4j</groupId>
         <artifactId>log4j-api</artifactId>
         <version>2.23.1</version>
       </dependency>
-
-      
       <dependency>
         <groupId>org.apache.logging.log4j</groupId>
         <artifactId>log4j-core</artifactId>
         <version>2.23.1</version>
       </dependency>
+      <!-- apache POI Commons -->
+      <dependency>
+        <groupId>org.apache.commons</groupId>
+        <artifactId>commons-lang3</artifactId>
+        <version>3.14.0</version>
+      </dependency>
+
     </dependencies>
   </dependencyManagement>
   <build>
