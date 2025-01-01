@@ -1,1 +1,7 @@
 com\coffeecode\App.class
+com\coffeecode\model\DataModel.class
+com\coffeecode\utils\LoggerUtil.class
+com\coffeecode\model\LoadfileData.class
+com\coffeecode\utils\CustomException.class
+com\coffeecode\model\XlsxProcessor.class
+com\coffeecode\model\CsvProcessor.class
