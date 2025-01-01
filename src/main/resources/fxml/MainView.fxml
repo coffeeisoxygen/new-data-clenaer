@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.HBox?>
+
+<VBox xmlns:fx="http://javafx.com/fxml" spacing="10" alignment="CENTER" styleClass="main-container">
+    <MenuBar>
+        <Menu text="File">
+            <MenuItem text="Open File" onAction="#handleOpenFile"/>
+            <MenuItem text="Save" onAction="#handleSave"/>
+            <SeparatorMenuItem/>
+            <MenuItem text="Exit" onAction="#handleExit"/>
+        </Menu>
+    </MenuBar>
+    
+    <HBox spacing="10" alignment="CENTER">
+        <Button text="Load Data" onAction="#handleLoadData"/>
+        <Button text="Process" onAction="#handleProcess"/>
+        <Button text="Export" onAction="#handleExport"/>
+    </HBox>
+    
+    <TableView fx:id="dataTable" VBox.vgrow="ALWAYS"/>
+    
+    <ProgressBar fx:id="progressBar" progress="0.0" maxWidth="Infinity"/>
+</VBox>
